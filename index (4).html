@@ -1,0 +1,326 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Infotrakk - Latest News, Movies, Music &amp; Articles
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-900">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between h-auto md:h-16 py-4 md:py-0">
+    <div class="flex items-center justify-between w-full md:w-auto space-x-4">
+     <a class="text-2xl font-bold text-indigo-600" href="#">
+      Infotrakk
+     </a>
+     <span class="text-gray-600 font-medium whitespace-nowrap">
+      by Keith Masinde
+     </span>
+     <div class="md:hidden">
+      <button aria-label="Toggle menu" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-600" id="menu-btn">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+    <form class="mt-4 md:mt-0 md:ml-6 flex items-center w-full max-w-md md:max-w-xs bg-gray-100 rounded-md px-3 py-2">
+     <label for="search" class="sr-only">
+      Search
+     </label>
+     <input autocomplete="off" class="bg-transparent focus:outline-none flex-grow text-gray-700 placeholder-gray-400" id="search" name="search" placeholder="Search..." type="search"/>
+     <button aria-label="Search" class="text-indigo-600 hover:text-indigo-800 ml-2" type="submit">
+      <i class="fas fa-search fa-lg">
+      </i>
+     </button>
+    </form>
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-semibold mt-4 md:mt-0">
+     <a class="hover:text-indigo-600 transition" href="#">
+      Latest News
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#">
+      Movies
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#">
+      Music
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#">
+      Articles
+     </a>
+    </nav>
+   </div>
+   <nav class="md:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-indigo-50" href="#">
+     Latest News
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-indigo-50" href="#">
+     Movies
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-indigo-50" href="#">
+     Music
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-semibold hover:bg-indigo-50" href="#">
+     Articles
+    </a>
+   </nav>
+  </header>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-16 space-y-16">
+   <!-- Latest News Section -->
+   <section>
+    <h2 class="text-3xl font-bold mb-6 border-b border-indigo-600 pb-2">
+     Latest News
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <article class="md:col-span-2 bg-white rounded-lg shadow-md overflow-hidden">
+      <img alt="Breaking news headline image showing a busy city street with people and traffic under a cloudy sky" class="w-full h-56 object-cover" height="450" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d4a8a6d0-bf9a-4133-94c5-66945c02c9e7.jpg" width="800"/>
+      <div class="p-6">
+       <h3 class="text-2xl font-bold mb-3 leading-tight">
+        Breaking News: Major Event Shakes the World
+       </h3>
+       <p class="text-gray-700 mb-4">
+        In an unprecedented turn of events, the world witnessed a major development that is expected to have far-reaching consequences across multiple sectors. Experts are analyzing the situation as it unfolds.
+       </p>
+       <a class="inline-block text-indigo-600 font-semibold hover:underline" href="#">
+        Read more →
+       </a>
+      </div>
+     </article>
+     <aside class="space-y-6">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+       <img alt="World news image showing a globe with digital connections and data streams" class="w-full h-36 object-cover" height="225" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5cbe0fa8-549e-4780-24dc-1816309107b6.jpg" width="400"/>
+       <div class="p-4">
+        <h4 class="text-xl font-semibold mb-2">
+         Global Markets React to New Policies
+        </h4>
+        <p class="text-gray-600 text-sm">
+         Stock markets around the world showed mixed reactions following the announcement of new economic policies by major governments.
+        </p>
+       </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+       <img alt="Technology innovation image showing a futuristic robot hand touching a digital interface" class="w-full h-36 object-cover" height="225" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c5a81a60-33e7-4e05-b43a-3afc6981f344.jpg" width="400"/>
+       <div class="p-4">
+        <h4 class="text-xl font-semibold mb-2">
+         Breakthrough in AI Technology Announced
+        </h4>
+        <p class="text-gray-600 text-sm">
+         A leading tech company revealed a new AI system that promises to revolutionize industries from healthcare to finance.
+        </p>
+       </div>
+      </div>
+     </aside>
+    </div>
+   </section>
+   <!-- Movies Section -->
+   <section>
+    <h2 class="text-3xl font-bold mb-6 border-b border-indigo-600 pb-2">
+     Movies
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Movie poster showing a dramatic scene with lead actors in an action thriller" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/36185d9b-8161-4b6c-df08-b9b6b7dd2f8d.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-lg font-semibold mb-2">
+        Action Thriller Breaks Box Office Records
+       </h3>
+       <p class="text-gray-600 flex-grow text-sm">
+        The latest action thriller has smashed box office records worldwide, captivating audiences with its intense storyline and stunning visuals.
+       </p>
+       <a class="mt-4 text-indigo-600 font-semibold hover:underline self-start" href="#">
+        Read more →
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Romantic comedy movie poster showing a couple laughing in a sunny park" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/230d20d8-1699-42bb-0a4e-4594232a21bc.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-lg font-semibold mb-2">
+        New Romantic Comedy Wins Hearts
+       </h3>
+       <p class="text-gray-600 flex-grow text-sm">
+        This charming romantic comedy has been praised for its witty script and heartfelt performances by the lead actors.
+       </p>
+       <a class="mt-4 text-indigo-600 font-semibold hover:underline self-start" href="#">
+        Read more →
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Documentary movie poster showing breathtaking nature landscapes and wildlife" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c3315cd8-8746-4c44-55ae-fd915bafbfd3.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-lg font-semibold mb-2">
+        Stunning Nature Documentary Released
+       </h3>
+       <p class="text-gray-600 flex-grow text-sm">
+        Explore the wonders of the natural world in this visually stunning documentary featuring rare wildlife footage.
+       </p>
+       <a class="mt-4 text-indigo-600 font-semibold hover:underline self-start" href="#">
+        Read more →
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+   <!-- Music Section -->
+   <section>
+    <h2 class="text-3xl font-bold mb-6 border-b border-indigo-600 pb-2">
+     Music
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Music album cover showing a vibrant abstract art with colorful shapes" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0497af47-eb8e-4518-654f-9dc7b502104b.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-lg font-semibold mb-2">
+        New Album Release Tops Charts
+       </h3>
+       <p class="text-gray-600 flex-grow text-sm">
+        The latest album from a popular artist has topped charts worldwide with its fresh sound and catchy tunes.
+       </p>
+       <a class="mt-4 text-indigo-600 font-semibold hover:underline self-start" href="#">
+        Listen now →
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Live concert photo showing a singer performing on stage with colorful lights" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/05c66bd6-fea5-44f5-1010-6252077c8674.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-lg font-semibold mb-2">
+        Upcoming Live Concert Announced
+       </h3>
+       <p class="text-gray-600 flex-grow text-sm">
+        Fans are excited for the upcoming live concert featuring top artists performing their greatest hits.
+       </p>
+       <a class="mt-4 text-indigo-600 font-semibold hover:underline self-start" href="#">
+        Get tickets →
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Music festival crowd enjoying a sunny day with stage and performers" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cfa59ed5-631f-443b-f1b1-954182689943.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h3 class="text-lg font-semibold mb-2">
+        Music Festival Lineup Revealed
+       </h3>
+       <p class="text-gray-600 flex-grow text-sm">
+        The annual music festival has announced its star-studded lineup, promising an unforgettable experience for attendees.
+       </p>
+       <a class="mt-4 text-indigo-600 font-semibold hover:underline self-start" href="#">
+        Learn more →
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+   <!-- Articles Section -->
+   <section>
+    <h2 class="text-3xl font-bold mb-6 border-b border-indigo-600 pb-2">
+     Articles
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Article image showing a person writing notes in a journal with a cup of coffee" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/19ccc5b9-db7f-460c-0848-308e7ad1ed82.jpg" width="600"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-3">
+        The Art of Mindful Writing: Tips and Techniques
+       </h3>
+       <p class="text-gray-700 flex-grow mb-4">
+        Discover how mindful writing can improve creativity and mental clarity with practical tips from experts.
+       </p>
+       <a class="text-indigo-600 font-semibold hover:underline self-start" href="#">
+        Read full article →
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Article image showing a modern workspace with laptop, plants, and coffee cup" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2a33bd2c-59f2-4861-9ee4-830a86e24b7b.jpg" width="600"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-3">
+        Productivity Hacks for Remote Workers
+       </h3>
+       <p class="text-gray-700 flex-grow mb-4">
+        Learn effective strategies to stay productive and maintain work-life balance while working remotely.
+       </p>
+       <a class="text-indigo-600 font-semibold hover:underline self-start" href="#">
+        Read full article →
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Article image showing a person meditating outdoors in a peaceful natural setting" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2a6b88a6-4244-461c-00a7-b1269c26e899.jpg" width="600"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-3">
+        Benefits of Daily Meditation for Mental Health
+       </h3>
+       <p class="text-gray-700 flex-grow mb-4">
+        Explore the positive effects of meditation on mental health and how to incorporate it into your daily routine.
+       </p>
+       <a class="text-indigo-600 font-semibold hover:underline self-start" href="#">
+        Read full article →
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+      <img alt="Article image showing a close-up of hands typing on a laptop keyboard" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/48ac3398-13f2-43b5-bbf2-43b5e60bbc15.jpg" width="600"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-3">
+        How to Start a Successful Blog in 2024
+       </h3>
+       <p class="text-gray-700 flex-grow mb-4">
+        A comprehensive guide to launching and growing a blog that attracts readers and generates income.
+       </p>
+       <a class="text-indigo-600 font-semibold hover:underline self-start" href="#">
+        Read full article →
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-white border-t border-gray-200 py-8">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <p class="text-gray-600 text-sm">
+     © 2024 Infotrakk. All rights reserved.
+    </p>
+    <p class="text-gray-600 text-sm">
+     <a class="hover:text-indigo-600 transition underline" href="mailto:keithmasinde063@gmail.com">
+      keithmasinde063@gmail.com
+     </a>
+    </p>
+    <div class="flex space-x-6 text-gray-600">
+     <a aria-label="Facebook" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-facebook-f fa-lg">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-linkedin-in fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
